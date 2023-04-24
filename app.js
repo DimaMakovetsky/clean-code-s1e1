@@ -20,23 +20,27 @@ var createNewTaskElement=function(taskString){
     var listItem=document.createElement("li");
     listItem.classList.add("incomplete-task");
     //input (checkbox)
-    var checkBox=document.createElement("input");//checkbx
+    var checkBox=document.createElement("input");
     checkBox.classList.add("input");
     checkBox.classList.add("checkbox");
     //label
-    var label=document.createElement("label");//label
+    var label=document.createElement("label");
     label.classList.add("task","label");
     //input (text)
-    var editInput=document.createElement("input");//text
+    var editInput=document.createElement("input");
     editInput.classList.add("task","input");
     //button.edit
-    var editButton=document.createElement("button");//edit button
+    var editButton=document.createElement("button");
     editButton.classList.add("edit");
     //button.delete
-    var deleteButton=document.createElement("button");//delete button
+    var deleteButton=document.createElement("button");
     deleteButton.classList.add("delete");
-    var deleteButtonImg=document.createElement("img");//delete button image
+    //delete button image
+    var deleteButtonImg=document.createElement("img");
     deleteButtonImg.classList.add("delete-img");
+    deleteButtonImg.setAttribute("alt","Delete button");
+
+    
     label.innerText=taskString;
 
     //Each elements, needs appending
