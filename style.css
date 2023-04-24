@@ -13,13 +13,17 @@
 .matrix-div .eisenhower-matrix {
     width: 100%;
 }
-.matrix-div .more-inf {
+.matrix-div 
+.more-inf {
     font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.matrix-div { text-align: center;
-}
+
+  .matrix-div { 
+    text-align: center;
+  }
+
 }
 .centered-main-page-element {
     display: block;
@@ -29,27 +33,26 @@
 .task {
     width: 56%;
     display: inline-block;
-    flex-grow: 1
+    flex-grow: 1;
 }
 .task-row-wrapper {
     display: flex;
 }
 #incomplete-tasks,
-#completed-tasks
- {
-    margin:0;
+#completed-tasks {
+    margin: 0;
     padding: 0px;
 }
-.incomplete-task, 
+.incomplete-task,
 .complete-task,
 .h3 {
-    list-style:none;
+    list-style: none;
 }
 .input,
 .edit,
 .delete,
-.add-button{
-    outline:none;
+.add-button {
+    outline: none;
 }
 .edit,
 .delete,
@@ -131,7 +134,7 @@
 }
 .incomplete-task > .input[type="text"],
 .complete-task > .input[type="text"] {
-    width: 226px
+    width: 226px;
 }
 .delete-img {
     height: 2em;
@@ -143,25 +146,25 @@
 }
 
 /* Completed */
-#completed-tasks .label {
-    text-decoration: line-through
+#completed-tasks
+.label {
+    text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
 #incomplete-tasks .input[type=text],
 #completed-tasks .input[type=text] {
-    display:none
+    display: none;
 }
 
 #incomplete-tasks .editMode .input[type=text],
-#completed-tasks .editMode .input[type=text]
- {
-    display:inline-block;
-    width:224px
+#completed-tasks .editMode .input[type=text] {
+    display: inline-block;
+    width: 224px
 }
 
 #incomplete-tasks .editMode .label,
 #completed-tasks .editMode .label {
-    display:none;
+    display: none;
 }
